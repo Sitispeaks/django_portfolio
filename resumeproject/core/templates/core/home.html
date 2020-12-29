@@ -1,0 +1,41 @@
+{% extends 'core/base.html' %} {% load static %} {% block content %}
+<div class="mt-5">
+  <div class="text-center">
+    <img
+      src="{% static 'core/images/my.jpg' %}"
+      alt=""
+      class="img-thumbnail"
+      width="250px"
+      height="150px"
+      srcset=""
+    />
+  </div>
+
+  <div class="mt-5 text-white mx-5 text-justify">
+    <h1 class="font-weight-bold">Hello,</h1>
+    
+    <div class="px-4" style="line-height:2rem;">
+      <p style="text-indent: 100px">
+        I am
+        <b class="text-warning"> Sitikanta Panigrahi</b> having Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Perspiciatis maxime iure
+        sit incidunt inventore! Aliquid itaque natus ex officia laborum rem
+        repellendus eligendi, quidem, blanditiis tempora ipsum voluptas
+        recusandae veritatis. Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Quidem, vero aliquid deserunt, consectetur repudiandae
+        sapiente ipsum excepturi obcaecati aut illo impedit. Illo distinctio
+        saepe voluptate quaerat placeat perspiciatis, incidunt vero.<br />
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, harum
+        dolores distinctio facere error eos aliquid, facilis minima nisi, ipsam
+        praesentium quibusdam? Nemo eius laudantium adipisci soluta iste nostrum
+        amet.<br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+      </p>
+    </div>
+  </div>
+  <div class="text-center">
+  <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mr-5">Hire me</a>
+  <a href="{% url 'contact' %}" class="btn btn-outline-info my-3 ">Contact</a>
+    </div
+</div>
+{% endblock content %}
